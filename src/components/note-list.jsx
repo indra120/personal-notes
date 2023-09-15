@@ -67,12 +67,12 @@ function NoteList({ notes, setNotes }) {
                 <div className="p-4 md:p-6 relative">
                   {note.archived ? (
                     <MdUnarchive
-                      className="absolute right-8 md:right-12 w-6 h-6 text-blue-400 cursor-pointer"
+                      className="absolute right-12 w-6 h-6 text-blue-400 cursor-pointer"
                       onClick={toggleArchive(note.id)}
                     />
                   ) : (
                     <MdArchive
-                      className="absolute right-8 md:right-12 w-6 h-6 text-green-400 cursor-pointer"
+                      className="absolute right-12 w-6 h-6 text-green-400 cursor-pointer"
                       onClick={toggleArchive(note.id)}
                     />
                   )}
