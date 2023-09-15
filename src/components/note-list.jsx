@@ -51,7 +51,7 @@ function NoteList({ notes, setNotes }) {
 
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {notes
+          {notes.length === 0 ? "You don't have any notes" : notes
             .filter((note) => {
               if (search) {
                 return note.title.toLowerCase().includes(search)
