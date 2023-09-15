@@ -67,6 +67,7 @@ function CreateNoteModal({ setNotes }) {
           <Input
             name="title"
             placeholder="Server Actions"
+            required
             value={title}
             onChange={handleTitle}
             error={error}
@@ -83,6 +84,7 @@ function CreateNoteModal({ setNotes }) {
             placeholder="Server Action are bla bla bla"
             value={body}
             onChange={handleBody}
+            required
           ></textarea>
         </>
       </ModalBody>
