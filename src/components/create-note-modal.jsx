@@ -27,11 +27,12 @@ function CreateNoteModal({ setNotes }) {
   }
 
   function createNote() {
+    const timestamp = +new Date()
     const newNote = {
-      id: new Date(),
+      id: timestamp,
       title,
       body,
-      createdAt: Date.now(),
+      createdAt: timestamp,
       archived: false,
     }
 
